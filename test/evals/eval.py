@@ -43,13 +43,13 @@ def parse_args():
     )
 
     parser.add_argument(
-        "--agent_provider", default=None, help="Agent provider (default: None, uses API default)"
+        "--agent_provider", default="gemini", help="Agent provider (default: gemini)"
     )
 
     parser.add_argument(
         "--agent_model",
-        default=None,
-        help="Agent model (default: None, uses API default)",
+        default="gemini-2.0-flash",
+        help="Agent model (default: gemini-2.0-flash)",
     )
 
     parser.add_argument(
